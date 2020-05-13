@@ -220,7 +220,7 @@ extern "C" {
 #   define PTR_SIZE_INT int
 #  endif                        /* __INITIAL_POINTER_SIZE == 64 [else] */
 # elif !defined(PTR_SIZE_INT)   /* defined(OPENSSL_SYS_VMS) */
-#  define PTR_SIZE_INT size_t
+#  define PTR_SIZE_INT uintptr_t
 # endif                         /* defined(OPENSSL_SYS_VMS) [else] */
 
 # if !defined(OPENSSL_NO_ASM) && !defined(OPENSSL_NO_INLINE_ASM) && !defined(PEDANTIC)
